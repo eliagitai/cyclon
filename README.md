@@ -1,11 +1,17 @@
 # Setup with Leap Motion, Arduino using Cyclon and Node
 
 ## Installation
+<<<<<<< HEAD
 
 - Run these commands to setup Leap and Arduino using Node and Cyclon for integration.
 
 ### Leap Motion
 
+=======
+- Run these commands to setup Leap and Arduino using Node and Cyclon for integration.
+
+### Leap Motion
+>>>>>>> master
 - Install Node.js [at this link](https://nodejs.org/en/download/).
 - Download Leap Motion SDK v2.3.1 [at this link](https://developer-archive.leapmotion.com/downloads/external/skeletal-beta/linux?version=2.3.1.31549).
 
@@ -29,8 +35,12 @@ WantedBy=multi-user.target
 ```
 
 - Back in terminal, type:
+<<<<<<< HEAD
 
 ```bash
+=======
+```
+>>>>>>> master
 $ sudo ln -s /lib/systemd/system/leapd.service /etc/systemd/system/leapd.service
 $ sudo systemctl daemon-reload
 $ sudo dpkg --install Leap-2.3.1+31549-x64.deb
@@ -45,6 +55,7 @@ $ cd cyclon/LeapDeveloperKit
 ```bash
 ~/cyclon/LeapDeveloperKit $ service leapd restart
 ```
+<<<<<<< HEAD
 
 ### Arduino
 
@@ -54,6 +65,12 @@ $ cd cyclon/LeapDeveloperKit
 
 ### Setup repository for use
 
+=======
+### Arduino
+- Download Arduino software [at this link](https://www.arduino.cc/download_handler.php)
+- Verify examples programs work such as Blink following [their official tutorial](https://www.arduino.cc/en/Tutorial/Blink)
+### Setup repository for use
+>>>>>>> master
 - Now open another terminal and type:
 
 ```bash
@@ -63,6 +80,7 @@ $ cd cyclon/LeapDeveloperKit
 ```
 
 ## Tests
+<<<<<<< HEAD
 
 - Cyclon
 
@@ -74,17 +92,31 @@ $ cd cyclon/LeapDeveloperKit
   - Make sure you did the calibration in the LeapControlPanel.
 
 ```bash
+=======
+- Cyclon
+```
+~/cyclon $ node cyclontest.js
+```
+- Leap Motion
+  - Make sure you did the calibration in the LeapControlPanel.
+```
+>>>>>>> master
 ~/cyclon $ node cycleap.js
 ```
 
 - Arduino
   - Make sure Blink example program works before testing this.
+<<<<<<< HEAD
 
 ```bash
+=======
+```
+>>>>>>> master
 ~/cyclon $ node cyclard.js
 ```
 
 - Leap Motion & Arduino
+<<<<<<< HEAD
 
 ```bash
 ~/cyclon $ node ardleap.js
@@ -92,6 +124,12 @@ $ cd cyclon/LeapDeveloperKit
 
 ## References
 
+=======
+```
+~/cyclon $ node ardleap.js
+```
+## References
+>>>>>>> master
 - [Leap Motion SDK](https://developer.leapmotion.com/sdk/v2)
 - [Arduino documentation](https://www.arduino.cc/en/Tutorial/Blink)
 - [Leap Motion Linux installation](https://support.leapmotion.com/hc/en-us/articles/223782608-Linux-Installation)
